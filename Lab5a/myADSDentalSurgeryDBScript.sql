@@ -48,7 +48,7 @@ CREATE TABLE Appointment(
   FOREIGN KEY (dentistId) REFERENCES Dentist(dentistId),
   FOREIGN KEY (patientId) REFERENCES Patient(patientId)
 );
-ALTER TABLE Appointment DROP COLUMN sergery;
+
 DROP TABLE Appointment;
 CREATE TABLE Notification(
 	notificationId INT NOT NULL,
@@ -65,13 +65,7 @@ CREATE TABLE Office_Manager(
     roleId INT,
     notificationId INT
 );
-CREATE TABLE Suappointmentappointmentrgery(
-	surgeryId INT NOT NULL,
-    surgeryName VARCHAR(45),
-    phoneNumber INT,
-    addressId INT,
-    FOREIGN KEY(addressId) REFERENCES Address(addressId)
-);
+SHOW tables;
 ALTER TABLE Office_Manager
 ADD CONSTRAINT fk_customer_id
 FOREIGN KEY (notificationId) REFERENCES Notification(notificationId);
