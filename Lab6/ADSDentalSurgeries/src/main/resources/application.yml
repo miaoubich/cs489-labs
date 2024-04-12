@@ -1,0 +1,16 @@
+spring:
+ application:
+  name: ads-dental-surgeries
+ datasource:
+  url: jdbc:mysql://${DB_HOST:localhost}:3306/surgerydb
+  username: root
+  password: password
+ jpa:
+  show-sql: true
+  hibernate:
+   ddl-auto: create
+ 
+
+  
+   
+
